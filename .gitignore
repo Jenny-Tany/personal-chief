@@ -1,0 +1,23 @@
+cat > .gitignore <<'EOF'
+# python 虚拟环境
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# sqlite数据库文件
+app/db/*.db
+
+# 环境变量，不要上传密钥！
+.env
+
+# 日志文件
+logs/
+*.log
+
+# IDE
+.idea/
+.vscode/
+EOF
